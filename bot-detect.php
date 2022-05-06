@@ -12,11 +12,10 @@
  * Domain Path: /languages
  * License: GPL-2.0+
  */
-define ( 'DIR_PATH' , plugin_dir_path ( __FILE__ ) );
-require_once sprintf ( "%shelper/BotAgent.php" , DIR_PATH );
+define ( 'BOT_DETECT_BOT_AGENT_ROOT_PATH' , plugin_dir_path ( __FILE__ ) );
+require_once sprintf ( "%shelper/BotAgent.php" , BOT_DETECT_BOT_AGENT_ROOT_PATH );
 
 use BotAgent\BotAgent;
-
 
 /** @var Class Instance $BotAgent */
 $agent = new BotAgent();
